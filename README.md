@@ -8,25 +8,18 @@ Companion to [Intelirized](https://github.com/htulibacki/intelirized) — same p
 
 ## Installation
 
-### macOS
+Drop the `ghosterized` file into Ghostty's user themes directory:
 
 ```sh
-mkdir -p "$HOME/Library/Application Support/com.mitchellh.ghostty/themes"
-cp ghosterized "$HOME/Library/Application Support/com.mitchellh.ghostty/themes/ghosterized"
+mkdir -p "$HOME/.config/ghostty/themes"
+cp ghosterized "$HOME/.config/ghostty/themes/ghosterized"
 ```
 
-### Linux
-
-```sh
-mkdir -p "$XDG_CONFIG_HOME/ghostty/themes"
-cp ghosterized "$XDG_CONFIG_HOME/ghostty/themes/ghosterized"
-```
-
-(If `$XDG_CONFIG_HOME` is unset, use `~/.config/ghostty/themes`.)
+This path works on both macOS and Linux.
 
 ### Activate
 
-Add to your Ghostty config (`~/.config/ghostty/config` or `~/Library/Application Support/com.mitchellh.ghostty/config`):
+Add to `~/.config/ghostty/config`:
 
 ```
 theme = ghosterized
